@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Alejandro García - Desarrollador Full Stack especializado en aplicaciones web modernas, sistemas de clasificación y herramientas PDF">
+    <meta name="keywords" content="desarrollador, full stack, JavaScript, Kotlin, C#, React, Node.js, PDF tools">
+    <meta name="author" content="Alejandro García">
+    <meta property="og:title" content="Alejandro García - Portafolio Profesional">
+    <meta property="og:description" content="Desarrollador Full Stack con experiencia en aplicaciones web modernas y sistemas de clasificación">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aalejandr12.github.io/Presentacion/">
+    
+    <title>Alejandro García - Portafolio Profesional</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AG</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hola, soy</span>
+                        <span class="name">Alejandro García</span>
+                        <span class="role">Desarrollador Full Stack</span>
+                    </h1>
+                    <p class="hero-description">
+                        Especializado en crear aplicaciones web modernas y sistemas de clasificación inteligentes. 
+                        Transformo ideas en soluciones digitales innovadoras con enfoque en la experiencia del usuario.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Ver Proyectos
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            Contactar
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <div class="window-title">developer.js</div>
+                        </div>
+                        <div class="code-content">
+                            <pre><code id="typing-code"></code></pre>
+                            <div class="cursor"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="section-subtitle">Conoce mi experiencia y pasión por el desarrollo</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Experiencia Técnica</h3>
+                        <p>
+                            Desarrollador con experiencia en múltiples tecnologías incluyendo JavaScript, 
+                            Kotlin, C# y frameworks modernos. Especializado en crear aplicaciones web 
+                            escalables y sistemas de clasificación inteligentes.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovación</h3>
+                        <p>
+                            Me apasiona resolver problemas complejos con soluciones elegantes y eficientes. 
+                            Siempre busco implementar las mejores prácticas y tecnologías emergentes 
+                            en mis proyectos.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Colaboración</h3>
+                        <p>
+                            Experiencia trabajando en equipos multidisciplinarios, comunicación efectiva 
+                            con stakeholders y capacidad para traducir requerimientos de negocio 
+                            en soluciones técnicas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Una muestra de mi trabajo y experiencia técnica</p>
+            </div>
+            <div class="projects-grid">
+                <!-- PurrCrafter Project -->
+                <div class="project-card" data-project="purrcrafter">
+                    <div class="project-image">
+                        <img src="Purrcrafter.png" alt="PurrCrafter - Herramientas PDF Online" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://aalejandr12.github.io/" target="_blank" class="project-link" title="Ver Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/aalejandr12/aalejandr12.github.io" target="_blank" class="project-link" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Aplicación Web</div>
+                        <h3 class="project-title">PurrCrafter - Herramientas PDF</h3>
+                        <p class="project-description">
+                            Aplicación web gratuita para manipular archivos PDF con herramientas avanzadas. 
+                            Incluye funciones para unir documentos por nombre y contenido, con procesamiento 
+                            local en el navegador para máxima privacidad.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">GitHub Pages</span>
+                        </div>
+                        <div class="project-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                Procesamiento local de archivos
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                Diseño responsivo moderno
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                Interfaz intuitiva y rápida
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SmartSort Project -->
+                <div class="project-card" data-project="smartsort">
+                    <div class="project-image">
+                        <img src="Sorting1.png" alt="SmartSort - Sistema de Clasificación" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link disabled" title="Proyecto Empresarial">
+                                    <i class="fas fa-lock"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Sistema Empresarial</div>
+                        <h3 class="project-title">SmartSort - Sistema de Clasificación</h3>
+                        <p class="project-description">
+                            Solución integral para clasificación y escaneo de paquetes con precisión. 
+                            Sistema compuesto por aplicación de escritorio y móvil para automatizar 
+                            la asignación de paquetes según manifiestos y grupos operativos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">WPF</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">QR/Barcode</span>
+                        </div>
+                        <div class="project-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                Escaneo automático de códigos
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                Tracking completo en tiempo real
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                Reducción de errores operativos
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Project Slot -->
+                <div class="project-card coming-soon">
+                    <div class="project-image">
+                        <div class="coming-soon-content">
+                            <i class="fas fa-plus-circle"></i>
+                            <h4>Próximamente</h4>
+                            <p>Nuevos proyectos en desarrollo</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">En Desarrollo</div>
+                        <h3 class="project-title">Nuevos Proyectos</h3>
+                        <p class="project-description">
+                            Constantemente trabajando en nuevas ideas y soluciones innovadoras. 
+                            ¡Mantente atento para ver las próximas incorporaciones al portafolio!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Lenguajes de Programación
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Kotlin</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>C#</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-paint-brush"></i>
+                        Frontend
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Tailwind CSS</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Herramientas & Otros
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Git & GitHub</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Bases de Datos</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>QR/Barcode APIs</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Trabajamos Juntos?</h2>
+                <p class="section-subtitle">Estoy disponible para nuevos proyectos y oportunidades</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Envíame un mensaje</p>
+                            <a href="mailto:alejandro@example.com" class="contact-link">
+                                alejandro@example.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>Ve mi código</p>
+                            <a href="https://github.com/aalejandr12" target="_blank" class="contact-link">
+                                @aalejandr12
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>Conectemos profesionalmente</p>
+                            <a href="#" target="_blank" class="contact-link">
+                                Alejandro García
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Alejandro García. Todos los derechos reservados.</p>
+                    <p>Desarrollado con ❤️ y mucho ☕</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/aalejandr12" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:alejandro@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
