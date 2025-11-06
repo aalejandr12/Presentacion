@@ -123,21 +123,23 @@ animateOnScroll.forEach(el => {
 // ===================================
 const contactForm = document.getElementById('contact-form');
 
-contactForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Simulate form submission
-    console.log('Form submitted:', data);
-    
-    // Show success message
-    alert('¡Gracias por tu mensaje! Te contactaré pronto. 🚀');
-    
-    // Reset form
-    contactForm.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
+        
+        // Simulate form submission
+        console.log('Form submitted:', data);
+        
+        // Show success message
+        alert('¡Gracias por tu mensaje! Te contactaré pronto. 🚀');
+        
+        // Reset form
+        contactForm.reset();
+    });
+}
 
 // ===================================
 // SMOOTH SCROLL POLYFILL
@@ -191,30 +193,6 @@ projectCards.forEach(card => {
     card.addEventListener('mouseleave', () => {
         card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
     });
-});
-
-// ===================================
-// CURSOR EFFECT (OPTIONAL)
-// ===================================
-const cursor = document.createElement('div');
-cursor.className = 'custom-cursor';
-cursor.style.cssText = `
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #6366f1;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.1s ease;
-    display: none;
-`;
-document.body.appendChild(cursor);
-
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    cursor.style.display = 'block';
 });
 
 // ===================================
